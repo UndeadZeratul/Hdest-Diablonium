@@ -1,19 +1,3 @@
-// Spawn Bias (for enemies that do replace their replacees)
-OptionValue "SpawnBias" {
-	-1,    "Disabled"
-	 0,    "Replace All"
-	 2,    "1 in 3"
-	 4,    "1 in 5"
-	 9,    "1 in 10"
-	 14,   "1 in 15"
-	 19,   "1 in 20"
-	 24,   "1 in 25"
-	 49,   "1 in 50"
-	 99,   "1 in 100"
-	 149,  "1 in 150"
-	 199,  "1 in 200"
-}
-
 OptionMenu "HDDiabloniumMenu"
 {
     StaticText "$MENU_ENEMIES_TITLE", "Fire"
@@ -52,10 +36,10 @@ OptionMenu "babydevilerSpawning" {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Fire"
     StaticText "$MENU_BABYDEVILER_BABUIN_SPAWNTEXT", "White"
-	Option "$MENU_ENEMYSPAWNRATE", "babydeviler_babuin_spawn_bias", "SpawnBias"
+	ScaleSlider "$MENU_ENEMYSPAWNRATE", "babydeviler_babuin_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
 	SafeCommand "$MENU_RESETENEMY", "resetcvar babydeviler_babuin_spawn_bias"
     StaticText "$MENU_BABYDEVILER_SPECTRE_SPAWNTEXT", "White"
-	Option "$MENU_ENEMYSPAWNRATE", "babydeviler_spectre_spawn_bias", "SpawnBias"
+	ScaleSlider "$MENU_ENEMYSPAWNRATE", "babydeviler_spectre_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
 	SafeCommand "$MENU_RESETENEMY", "resetcvar babydeviler_spectre_spawn_bias"
  	StaticText ""
 
@@ -80,7 +64,7 @@ OptionMenu "teendevilerSpawning" {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Fire"
     StaticText "$MENU_TEENDEVILER_IMP_SPAWNTEXT", "White"
-	Option "$MENU_ENEMYSPAWNRATE", "teendeviler_imp_spawn_bias", "SpawnBias"
+	ScaleSlider "$MENU_ENEMYSPAWNRATE", "teendeviler_imp_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
 	SafeCommand "$MENU_RESETENEMY", "resetcvar teendeviler_imp_spawn_bias"
  	StaticText ""
 
@@ -105,7 +89,7 @@ OptionMenu "adultdevilerSpawning" {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Fire"
     StaticText "$MENU_ADULTDEVILER_HELLKNIGHT_SPAWNTEXT", "White"
-	Option "$MENU_ENEMYSPAWNRATE", "adultdeviler_hellknight_spawn_bias", "SpawnBias"
+	ScaleSlider "$MENU_ENEMYSPAWNRATE", "adultdeviler_hellknight_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
 	SafeCommand "$MENU_RESETENEMY", "resetcvar adultdeviler_hellknight_spawn_bias"
  	StaticText ""
 
@@ -130,13 +114,13 @@ OptionMenu "wretchedghoulSpawning" {
 
 	StaticText "$MENU_SPAWNOPTIONS", "Fire"
     StaticText "$MENU_WRETCHEDGHOUL_LOSTSOUL_SPAWNTEXT", "White"
-	Option "$MENU_ENEMYSPAWNRATE", "wretchedghoul_lostsoul_spawn_bias", "SpawnBias"
+	ScaleSlider "$MENU_ENEMYSPAWNRATE", "wretchedghoul_lostsoul_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
 	SafeCommand "$MENU_RESETENEMY", "resetcvar wretchedghoul_lostsoul_spawn_bias"
     StaticText "$MENU_WRETCHEDGHOUL_BABUIN_SPAWNTEXT", "White"
-	Option "$MENU_ENEMYSPAWNRATE", "wretchedghoul_babuin_spawn_bias", "SpawnBias"
+	ScaleSlider "$MENU_ENEMYSPAWNRATE", "wretchedghoul_babuin_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
 	SafeCommand "$MENU_RESETENEMY", "resetcvar wretchedghoul_babuin_spawn_bias"
     StaticText "$MENU_WRETCHEDGHOUL_SPECTRE_SPAWNTEXT", "White"
-	Option "$MENU_ENEMYSPAWNRATE", "wretchedghoul_spectre_spawn_bias", "SpawnBias"
+	ScaleSlider "$MENU_ENEMYSPAWNRATE", "wretchedghoul_spectre_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
 	SafeCommand "$MENU_RESETENEMY", "resetcvar wretchedghoul_spectre_spawn_bias"
  	StaticText ""
 

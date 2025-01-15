@@ -16,6 +16,7 @@ Class HarmlessSkulCol : HDActor
 	Radius 16;
 	Height 40;
 	+solid
+	+notarget
 	}
 	states
 	{

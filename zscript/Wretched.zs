@@ -462,7 +462,7 @@ Class WretchedGhoul : HDMobBase
 				}
 				GHST F 2; 
 				#### A 0 A_Jump(256,"see");
-			xDeath:
+			gib:
 				POSS I 0 
 				{
 					A_SpawnItemEx("BFGNecroShard",flags:SXF_TRANSFERPOINTERS|SXF_SETMASTER,240);
